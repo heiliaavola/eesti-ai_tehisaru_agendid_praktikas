@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Kontrollib, kas keskkond on töökorras. Käivita: bash .devcontainer/kontroll.sh
-# Koolitajale ja abilistele: käivita ka nädal enne töötuba, sest tasuta mudelite valik muutub.
 set -uo pipefail
 export PATH="$HOME/.opencode/bin:$PATH"
 cd "$(dirname "$0")/.."
