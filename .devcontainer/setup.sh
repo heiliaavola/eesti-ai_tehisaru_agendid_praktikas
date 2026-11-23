@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Paigaldab OpenCode'i kindla versiooni. Käivitub ise, kui Codespace luuakse.
-# Versioon on lukus, et kõigil osalejatel oleks sama programm. Uuenda ainult pärast testimist.
 set -euo pipefail
 
 OPENCODE_VERSION="1.19.4"
