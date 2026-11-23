@@ -1,0 +1,38 @@
+{
+  // Töötoa "Tehisaru agendid praktikas" pilvekeskkond (GitHub Codespaces).
+  // Agent töötab siin, mitte osaleja arvutis. Katkise keskkonna saab kustutada ja uuesti luua.
+  "name": "Tehisaru agendid praktikas",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "hostRequirements": { "cpus": 2 },
+  "containerEnv": {
+    "OPENCODE_DISABLE_AUTOUPDATE": "1"
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "Veebilehe eelvaade", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "extensions": ["ms-vscode.live-server"],
+      "settings": {
+        // Saadab Ctrl- ja Tab-kiirklahvid terminali, et OpenCode'i kiirklahvid töötaksid brauseris.
+        "terminal.integrated.sendKeybindingsToShell": true,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.startupEditor": "none",
+        "chat.disableAIFeatures": true,
+        "extensions.ignoreRecommendations": true,
+        // Peidab juhendi veebilehe failid, et osaleja failide nimekiri jääks lihtsaks.
+        "files.exclude": {
+          "**/.git": true,
+          "**/.DS_Store": true,
+          "juhend": true,
+          "_config.yml": true
+        }
+      }
+    }
+  }
+}

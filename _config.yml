@@ -1,0 +1,7 @@
+# GitHub Pagesi seadistus: README.md on avaleht.
+title: Tehisaru agendid praktikas
+description: Seadistusjuhend
+lang: et
+exclude:
+  - AGENTS.md
+  - opencode.json

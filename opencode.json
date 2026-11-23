@@ -1,0 +1,20 @@
+{
+  "model": "opencode/glm-5.3-flash-free",
+  "small_model": "opencode/glm-5.3-flash-free",
+  "enabled_providers": ["opencode"],
+  "autoupdate": false,
+  "share": "disabled",
+  "permission": {
+    "edit": "allow",
+    "bash": {
+      "*": "ask",
+      "rm *": "deny",
+      "sudo *": "deny",
+      "git push*": "deny",
+      "gh *": "deny"
+    },
+    "webfetch": "ask",
+    "websearch": "ask",
+    "external_directory": "deny"
+  }
+}
