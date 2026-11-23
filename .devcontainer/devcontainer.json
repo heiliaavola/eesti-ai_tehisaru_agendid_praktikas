@@ -1,6 +1,5 @@
 {
-  // Töötoa "Tehisaru agendid praktikas" pilvekeskkond (GitHub Codespaces).
-  // Agent töötab siin, mitte osaleja arvutis. Katkise keskkonna saab kustutada ja uuesti luua.
+  // Töötoa "Tehisaru agendid praktikas" pilvekeskkond (GitHub Codespaces)
   "name": "Tehisaru agendid praktikas",
   "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
   "hostRequirements": { "cpus": 2 },
