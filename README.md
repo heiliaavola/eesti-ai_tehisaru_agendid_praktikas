@@ -68,7 +68,11 @@ Sulge brauseri vahekaart. Keskkond peatub ise. Töötoa päeval klõpsa sama nup
 | OpenCode soovitab käsku `/connect` | Seda pole vaja. Tasuta mudelid töötavad ilma. |
 | Midagi muud | Tee ekraanipilt ja kirjuta aadressile [tehisaru.tootuba@ut.ee](mailto:tehisaru.tootuba@ut.ee). |
 
-Keskkonda saab kontrollida ka käsuga `bash .devcontainer/kontroll.sh`.
+### Kontrolli, kas keskkond töötab
+
+Ava uus terminal: klõpsa terminali akna paremas ülanurgas **+** märki. Kirjuta sinna `bash .devcontainer/kontroll.sh` ja vajuta Enter. Ära kirjuta käsku OpenCode'i sisestusvälja, sest siis saadad selle agendile.
+
+Kontroll võtab kuni minuti. Kui kõik töötab, on viimasel real **Kõik korras.** Kui mõni rida algab sõnaga **VIGA**, tee ekraanipilt ja saada see aadressile [tehisaru.tootuba@ut.ee](mailto:tehisaru.tootuba@ut.ee).
 
 ## Kasulikud võtted
 
