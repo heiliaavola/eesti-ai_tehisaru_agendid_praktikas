@@ -50,7 +50,7 @@ Kui ekraanile tuleb punane veateade, vaata allpool olevat tabelit.
 
 ## 5. Anna teada, et said valmis
 
-Tee ekraanipilt, kus on näha fail `tere.txt` ja agendi vastus, ning saada see aadressile [heili.aavola@ut.ee](mailto:heili.aavola@ut.ee).
+Tee ekraanipilt, kus on näha fail `tere.txt` ja agendi vastus, ning saada see aadressile [tehisaru.tootuba@ut.ee](mailto:tehisaru.tootuba@ut.ee).
 
 Sulge brauseri vahekaart. Keskkond peatub ise. Töötoa päeval klõpsa sama nuppu uuesti: sinu keskkond on alles.
 
@@ -66,7 +66,7 @@ Sulge brauseri vahekaart. Keskkond peatub ise. Töötoa päeval klõpsa sama nup
 | Sisestusvälja all on kiri **Shell** | Vajuta Esc. |
 | Kleepimine ei tööta või tuleb teade **Unable to read from the browser's clipboard** | Kleebi hiire parema nupuga. Kui ka see ei tööta, kirjuta lause ise. |
 | OpenCode soovitab käsku `/connect` | Seda pole vaja. Tasuta mudelid töötavad ilma. |
-| Midagi muud | Tee ekraanipilt ja kirjuta aadressile [heili.aavola@ut.ee](mailto:heili.aavola@ut.ee). |
+| Midagi muud | Tee ekraanipilt ja kirjuta aadressile [tehisaru.tootuba@ut.ee](mailto:tehisaru.tootuba@ut.ee). |
 
 Keskkonda saab kontrollida ka käsuga `bash .devcontainer/kontroll.sh`.
 
