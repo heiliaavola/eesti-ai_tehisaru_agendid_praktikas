@@ -10,5 +10,7 @@ if ! grep -q '.opencode/bin' "$HOME/.bashrc"; then
   echo 'export PATH="$HOME/.opencode/bin:$PATH"' >> "$HOME/.bashrc"
 fi
 
+sudo ln -sf "$HOME/.opencode/bin/opencode" /usr/local/bin/opencode
+
 "$HOME/.opencode/bin/opencode" --version
 echo "OpenCode on paigaldatud. Ava terminal ja kirjuta: opencode"

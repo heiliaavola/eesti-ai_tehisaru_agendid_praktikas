@@ -7,6 +7,7 @@
     "OPENCODE_DISABLE_AUTOUPDATE": "1"
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
+  "waitFor": "postCreateCommand",
   "forwardPorts": [8000],
   "portsAttributes": {
     "8000": { "label": "Veebilehe eelvaade", "onAutoForward": "openPreview" }

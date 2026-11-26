@@ -14,33 +14,39 @@ GitHub on veebikeskkond, kus hoitakse tarkvaraprojekte. Töötoas kasutame selle
 
 ## 2. Ava töötoa keskkond
 
-1. Klõpsa sellel nupul:
+1. Klõpsa allolevat musta nuppu **Open in GitHub Codespaces**. Nupp on siinsamas juhendis. GitHubi enda lehel seda nuppu ei ole.
 
    [![Ava GitHub Codespacesis](https://github.com/codespaces/badge.svg)](https://codespaces.new/heiliaavola/eesti-ai_tehisaru_agendid_praktikas?quickstart=1)
 
+   Kui nupp ei tööta, ava see link: [codespaces.new/heiliaavola/eesti-ai_tehisaru_agendid_praktikas](https://codespaces.new/heiliaavola/eesti-ai_tehisaru_agendid_praktikas?quickstart=1)
+
 2. Kui GitHub küsib, logi sisse.
 3. Vajuta rohelist nuppu **Create codespace**.
-4. Oota 2–3 minutit. Brauseris avaneb tööala: vasakul on failid ja all on terminal.
+4. Oota 2–5 minutit, kuni avaneb tööala: vasakul on failid ja all on terminal. Tööala avaneb uuel vahekaardil. Hoia see juhend teisel vahekaardil lahti.
+5. Kui GitHub küsib **Do you trust the authors of the files in this folder?**, vajuta **Trust Folder & Continue**. Need on töötoa failid ja need töötavad ainult sinu pilvekeskkonnas.
 
 Terminal on aken, kuhu kirjutatakse käske. Kirjuta käsk ja vajuta Enter.
 
 ## 3. Käivita agent
 
-1. Klõpsa all terminali aknas.
+1. Ava uus terminal: klõpsa terminali akna paremas ülanurgas **+** märki.
 2. Kirjuta `opencode` ja vajuta Enter.
-3. Avaneb OpenCode. Sisestusvälja all on kiri **Build · GLM-5.3-Flash Free**.
+3. Avaneb OpenCode. Sisestusvälja all on kiri **Build** ja mudeli nimi, näiteks **Big Pickle**.
 
 ## 4. Proovi agenti
 
-1. Kopeeri see lause ja kleebi see sisestusvälja:
+1. Kopeeri see lause:
 
    ```
    Loo fail tere.txt, kus on lause: Tere, agent. Seejärel näita käsuga ls kausta sisu.
    ```
 
-2. Vajuta Enter.
-3. Agent loob faili. Seejärel küsib ta luba käsu `ls` käivitamiseks. Vajuta Enter: valitud on **Allow once** (luba üks kord).
-4. Vasakul failide nimekirjas on nüüd fail `tere.txt`.
+2. Klõpsa OpenCode'i aknas hiire parema nupuga. Kui avaneb menüü, vali **Paste**. Kiirklahvid Ctrl+V ja Cmd+V ei pruugi siin töötada. Kui kleepimine ei õnnestu, kirjuta lause ise.
+3. Vajuta Enter.
+4. Agent loob faili. Seejärel küsib ta luba käsu `ls` käivitamiseks: ekraanile tuleb **Permission required**. Nii otsustad sina, milliseid käske agent sinu keskkonnas käivitab. Vajuta Enter: valitud on **Allow once** (luba üks kord).
+5. Vasakul failide nimekirjas on nüüd fail `tere.txt`.
+
+Kui ekraanile tuleb punane veateade, vaata allpool olevat tabelit.
 
 ## 5. Anna teada, et said valmis
 
@@ -54,10 +60,11 @@ Sulge brauseri vahekaart. Keskkond peatub ise. Töötoa päeval klõpsa sama nup
 | --- | --- |
 | Nuppu **Create codespace** pole | Logi GitHubi sisse ja kinnita oma e-posti aadress. |
 | Terminali pole näha | Vali vasakult ülevalt menüü ☰ › **Terminal** › **New Terminal**. |
-| Terminal ütleb `opencode: command not found` | Sulge terminal prügikasti ikooniga ja ava uus. Kui see ei aita, kirjuta `bash .devcontainer/setup.sh`. |
-| Agent ei vasta või annab veateate | Oota minut ja proovi uuesti. Kui ei aita, kirjuta `/models` ja vali mõni teine mudel, mille nimes on **Free**. |
+| Terminal ütleb `opencode: command not found` | Oota minut. Ava uus terminal **+** märgiga ja proovi uuesti. Kui see ei aita, kirjuta `bash .devcontainer/setup.sh`. |
+| Punane kiri **Upstream request failed** või **Model is unavailable** | Mudel pole praegu saadaval. Vajuta Esc, kirjuta `/models` ja vali teine tasuta mudel, näiteks **Big Pickle** või mõni, mille nimes on **Free**. Seejärel saada lause uuesti. |
+| Agent ei vasta | Oota minut ja proovi uuesti. Kui ei aita, vali `/models` abil teine mudel. |
 | Sisestusvälja all on kiri **Shell** | Vajuta Esc. |
-| Kleepimine ei tööta | Windowsis vajuta Ctrl+Shift+V, Macis Cmd+V. Brauser võib küsida luba. |
+| Kleepimine ei tööta või tuleb teade **Unable to read from the browser's clipboard** | Kleebi hiire parema nupuga. Kui ka see ei tööta, kirjuta lause ise. |
 | OpenCode soovitab käsku `/connect` | Seda pole vaja. Tasuta mudelid töötavad ilma. |
 | Midagi muud | Tee ekraanipilt ja kirjuta aadressile [heili.aavola@ut.ee](mailto:heili.aavola@ut.ee). |
 

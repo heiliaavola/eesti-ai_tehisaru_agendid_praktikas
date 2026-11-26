@@ -1,6 +1,6 @@
 {
-  "model": "opencode/glm-5.3-flash-free",
-  "small_model": "opencode/glm-5.3-flash-free",
+  "model": "opencode/big-pickle",
+  "small_model": "opencode/big-pickle",
   "enabled_providers": ["opencode"],
   "autoupdate": false,
   "share": "disabled",
